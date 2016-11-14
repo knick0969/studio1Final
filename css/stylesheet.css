@@ -24,7 +24,6 @@ time, mark, audio, video {
 	padding: 0;
 	border: 0;
 	font-size: 100%;
-	font: inherit;
 	vertical-align: baseline;
 }
 
@@ -35,6 +34,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-family: 'Open Sans', sans-serif;
 }
 ol, ul {
 	list-style: none;
@@ -52,3 +52,50 @@ table {
 	border-spacing: 0;
 }
 
+
+
+
+
+
+button{
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+}
+
+button:active{
+	border-bottom: 1px solid #cdcdcd;
+	transform: translateY(4px);
+}
+
+
+.buttonSpace{
+	padding: 30px;
+}
+
+.buttons{
+	padding: 5px 10px;
+	border-radius: 5px;
+	
+}
+
+.buttons img{
+	padding-right: 5px;
+}
+
+.deleteBtn{
+	background-color: #eaeaea;
+	color: #a09f9f;
+	border-bottom: 5px solid #cdcdcd;
+}
+
+.deleteBtn:hover{
+	background-color: #f6f6f6;
+	border-bottom: 5px solid #d7d7d7;
+	cursor: pointer;
+}
+
+.deleteBtn p{
+	display: inline;
+	position: relative;
+	bottom: 3px;
+}
