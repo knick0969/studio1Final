@@ -66,13 +66,10 @@ button{
 	font-family: 'Open Sans', sans-serif;
 }
 
-
-
-
-
 .buttons{
 	padding: 5px 10px;
 	border-radius: 5px;
+	position:relative;
 }
 
 .buttons img{
@@ -82,8 +79,10 @@ button{
 .buttons p{
 	display: inline;
 	position: relative;
-	bottom: 3px;
+	bottom: 2px;
 }
+
+/* DELETE BUTTON */
 
 .deleteBtn{
 	background-color: #eaeaea;
@@ -97,8 +96,40 @@ button{
 	cursor: pointer;
 }
 
-.deleteBtn:active{
-	border-bottom: 1px solid #cdcdcd;
-	transform: translateY(4px);
+
+/* EDIT BUTTON */
+
+.editBtn{
+	background-color: #888c88;
+	color: #ffffff;
+	border-bottom: 5px solid #6d706d;
 }
 
+.editBtn:hover{
+	background-color: #939792;
+	border-bottom: 5px solid #767a78;
+	cursor: pointer;
+}
+
+
+/* CONFIRM BUTTON */
+
+.confirmBtn{
+	background-color: #27a627;
+	color: #ffffff;
+	border-bottom: 5px solid #219621;
+}
+
+.confirmBtn:hover{
+	background-color: #36b234;
+	border-bottom: 5px solid #31a02b;
+	cursor: pointer;
+}
+
+
+/* BUTTON ACTIVE STATE */
+
+.buttons:active{
+	border-bottom-width: 1px;
+	margin-top:4px;
+}
