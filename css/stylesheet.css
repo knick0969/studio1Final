@@ -19,7 +19,7 @@ table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed, 
 figure, figcaption, footer, header, hgroup, 
 menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+time, mark, audio, video, input {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -52,139 +52,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-/*Random DIV to space out the buttons while I work on them.  Delete when ready. */
-.buttonSpace{
-	padding: 30px;
-}
-
-
-
-
-button{
-	border: none;
-	font-family: 'Open Sans', sans-serif;
-}
-
-.buttons{
-	padding: 5px 10px;
-	border-radius: 5px;
-	position:relative;
-	min-height: 41px;
-}
-
-.buttons img{
-	padding-right: 5px;
-}
-
-.buttons p{
-	display: inline;
-	position: relative;
-	bottom: 2px;
-}
-
-/* DELETE BUTTON, CANCEL BUTTON AND BACK BUTTON*/
-
-.deleteBtn:before{
-	content: "";
-	display: inline-block;
-	background-image: url(../img/deleteImg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 20px;
-	margin-right: 5px;
-}
-
-.backBtn:before{
-	content: "";
-	display: inline-block;
-	background-image: url(../img/backImg.png);
-	background-repeat: no-repeat;
-	background-position: center 8px;
-	height: 20px;
-	width: 20px;
-	margin-right: 5px;
-}
-
-.deleteBtn, .cancelBtn, .backBtn{
-	background-color: #eaeaea;
-	color: #a09f9f;
-	border-bottom: 5px solid #cdcdcd;
-}
-
-.deleteBtn:hover, .cancelBtn:hover, .backBtn:hover{
-	background-color: #f6f6f6;
-	border-bottom: 5px solid #d7d7d7;
-	cursor: pointer;
-}
-
-
-/* EDIT BUTTON */
-
-.editBtn:before{
-	content: "";
-	display: inline-block;
-	background-image: url(../img/editImg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 20px;
-	margin-right: 5px;
-}
-
-.editBtn{
-	background-color: #888c88;
-	color: #ffffff;
-	border-bottom: 5px solid #6d706d;
-}
-
-.editBtn:hover{
-	background-color: #939792;
-	border-bottom: 5px solid #767a78;
-	cursor: pointer;
-}
-
-
-/* CONFIRM BUTTON */
-
-.confirmBtn:before{
-	content: "";
-	display: inline-block;
-	background-image: url(../img/confirmImg.png);
-	background-position: center;
-	background-repeat: no-repeat;
-	height: 20px;
-	width: 20px;
-	margin-right: 5px;
-}
-
-
-.confirmBtn{
-	background-color: #27a627;
-	color: #ffffff;
-	border-bottom: 5px solid #219621;
-}
-
-.confirmBtn:hover{
-	background-color: #36b234;
-	border-bottom: 5px solid #31a02b;
-	cursor: pointer;
-}
-
-
-
-
-
-/* BUTTON ACTIVE STATE */
-
-.buttons:active{
-	border-bottom-width: 1px;
-	margin-top:4px;
-}
-
-
 
 
 
@@ -261,6 +128,7 @@ label{
 }
 .loginTitle p {
 	font-size: 1.1em;
+	line-height: 1.25em;
 }
 .loginContainer{
 	color: #777;
@@ -288,4 +156,143 @@ label{
 }
 .loginFormWrapper .loginForm{
 	width: 100%;
+}
+
+.loginFormWrapper .loginForm .loginBtn{
+	width: 100%;
+	height: 45px;
+}
+
+
+/* GENERAL BUTTONS STYLING */
+/* I brought  all these Styles to the bottom of the stylesheet cause then there's no way
+for them to be overwritten by another class, as they are supposed to be the "Master Style" */
+
+/* DIV to create Spacing around Buttons, in order to let the effect of "PUSHING" the button happen
+normally when wrapper is a auto-height DIV (otherwise the margin-top - which is used to give the btn
+the effect it's being pressed - will increase the Mother DIV height) */
+
+.buttonWrapper{
+	height: 45px;
+}
+
+button{
+	border: none;
+	font-family: 'Open Sans', sans-serif;
+	outline: none; /* disables that blue border when btn is clicked */
+}
+
+.buttons{
+	padding: 5px 10px;
+	border-radius: 5px;
+	position:relative;
+}
+.buttons:focus{
+	outline: none; /* disables that blue border when btn is clicked */
+}
+
+.buttons img{
+	padding-right: 5px;
+}
+
+.buttons p{
+	display: inline;
+	position: relative;
+	bottom: 2px;
+}
+
+/* DELETE BUTTON */
+
+.deleteBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/deleteImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.backBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/backImg.png);
+	background-repeat: no-repeat;
+	background-position: center 8px;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.deleteBtn, .cancelBtn, .backBtn{
+	background-color: #eaeaea;
+	color: #a09f9f;
+	border-bottom: 5px solid #cdcdcd;
+}
+
+.deleteBtn:hover, .cancelBtn:hover, .backBtn:hover{
+	background-color: #f6f6f6;
+	border-bottom: 5px solid #d7d7d7;
+	cursor: pointer;
+}
+
+
+/* EDIT BUTTON */
+
+.editBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/editImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.editBtn{
+	background-color: #888c88;
+	color: #ffffff;
+	border-bottom: 5px solid #6d706d;
+}
+
+.editBtn:hover{
+	background-color: #939792;
+	border-bottom: 5px solid #767a78;
+	cursor: pointer;
+}
+
+
+/* CONFIRM BUTTON */
+
+.confirmBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/confirmImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.confirmBtn{
+	background-color: #27a627;
+	color: #ffffff;
+	border-bottom: 5px solid #219621;
+}
+
+.confirmBtn:hover{
+	background-color: #36b234;
+	border-bottom: 5px solid #31a02b;
+	cursor: pointer;
+}
+
+
+/* BUTTON ACTIVE STATE */
+
+.buttons:active{
+	border-bottom-width: 1px;
+	margin-top:4px;
 }
