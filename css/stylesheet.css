@@ -53,6 +53,10 @@ table {
 }
 
 
+/*Random DIV to space out the buttons while I work on them.  Delete when ready. */
+.buttonSpace{
+	padding: 30px;
+}
 
 
 
@@ -62,24 +66,23 @@ button{
 	font-family: 'Open Sans', sans-serif;
 }
 
-button:active{
-	border-bottom: 1px solid #cdcdcd;
-	transform: translateY(4px);
-}
 
 
-.buttonSpace{
-	padding: 30px;
-}
+
 
 .buttons{
 	padding: 5px 10px;
 	border-radius: 5px;
-	
 }
 
 .buttons img{
 	padding-right: 5px;
+}
+
+.buttons p{
+	display: inline;
+	position: relative;
+	bottom: 3px;
 }
 
 .deleteBtn{
@@ -94,8 +97,8 @@ button:active{
 	cursor: pointer;
 }
 
-.deleteBtn p{
-	display: inline;
-	position: relative;
-	bottom: 3px;
+.deleteBtn:active{
+	border-bottom: 1px solid #cdcdcd;
+	transform: translateY(4px);
 }
+
