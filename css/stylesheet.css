@@ -55,6 +55,7 @@ table {
 
 
 
+
 label{
 	font-size: 1.2em;
 }
@@ -185,6 +186,7 @@ button{
 	padding: 5px 10px;
 	border-radius: 5px;
 	position:relative;
+	min-height: 41px;
 }
 .buttons:focus{
 	outline: none; /* disables that blue border when btn is clicked */
@@ -202,13 +204,35 @@ button{
 
 /* DELETE BUTTON */
 
-.deleteBtn{
+.deleteBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/deleteImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.backBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/backImg.png);
+	background-repeat: no-repeat;
+	background-position: center 8px;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
+
+.deleteBtn, .cancelBtn, .backBtn{
 	background-color: #eaeaea;
 	color: #a09f9f;
 	border-bottom: 5px solid #cdcdcd;
 }
 
-.deleteBtn:hover{
+.deleteBtn:hover, .cancelBtn:hover, .backBtn:hover{
 	background-color: #f6f6f6;
 	border-bottom: 5px solid #d7d7d7;
 	cursor: pointer;
@@ -216,6 +240,17 @@ button{
 
 
 /* EDIT BUTTON */
+
+.editBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/editImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
 
 .editBtn{
 	background-color: #888c88;
@@ -231,6 +266,17 @@ button{
 
 
 /* CONFIRM BUTTON */
+
+.confirmBtn:before{
+	content: "";
+	display: inline-block;
+	background-image: url(../img/confirmImg.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	height: 20px;
+	width: 20px;
+	margin-right: 5px;
+}
 
 .confirmBtn{
 	background-color: #27a627;
