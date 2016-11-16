@@ -166,34 +166,83 @@ label{
 
 /* SCORING SHEET */
 
+.scoreAreaTest{
+	padding-top: 100px;
+}
+
+.scoreForm:focus{
+	transition: .1s;
+	-webkit-box-shadow: 0 0 10px 0 #d6d7f3;
+	box-shadow: 0 0 10px 0 #d6d7f3;
+	outline: #CCC;
+}
+
 label{
-	padding: 20px 30px;
-	border: 1px solid black;
+	padding: 20px 40px;
+	border: 1px solid #e6e6e6;
+	color: #d9d9d9;
+	font-size: 1.4em;
+	background-color: #f9f9f9;
+	margin-right: -6px;
 }
 
 .radioBox{
 	display: none;
 }
 
-input[type=radio]:#score1:checked + label {
+input[type=radio]#score1:hover + label{
+	background-color: #de6b70;
+} 
+
+input[type=radio]#score2:hover + label{
+	background-color: #f5c36e;
+} 
+
+input[type=radio]#score3:hover + label{
+	background-color: #f4ed85;
+} 
+
+input[type=radio]#score4:hover + label{
+	background-color: #94db8d;
+} 
+
+input[type=radio]#score5:hover + label{
+	background-color: #94db8d;
+} 
+
+input[type=radio]#score1:checked + label {
 	background-color: #d0242a;
+	color: white;
+	font-weight: bold;
 }
 
 input[type=radio]#score2:checked + label {
-	background-color: #f1e740;
+	background-color: #f1b040;
+	color: white;
+	font-weight: bold;
 }
 
 input[type=radio]#score3:checked + label {
 	background-color: #f1e740;
+	color: white;
+	font-weight: bold;
 }
 
-input[type=radio]#score4, #score5:checked + label {
+input[type=radio]#score4:checked + label {
 	background-color: #51c745;
+	color: white;
+	font-weight: bold;
+}
+
+input[type=radio]#score5:checked + label {
+	background-color: #51c745;
+	color: white;
+	font-weight: bold;
 }
 
 
 
-
+/* BUTTONS */
 
 .buttonWrapper{
 	height: 45px;
@@ -325,7 +374,6 @@ button{
 /* TEXT AREA INPUT */
 
 .textArea{
-	width: 100%;
 	height: 45px;
 	background-color: #FFF;
 	border: 1px solid #F0F0F0;
