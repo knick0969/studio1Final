@@ -262,7 +262,7 @@ label{
 	margin-bottom: 25px;
 }
 .contentWrapper .content{
-	width: 100%;
+	width: 99%;
 	padding-left: 290px;
 	padding-right: 30px;
 }
@@ -270,6 +270,7 @@ label{
 .notification{
 	width: 100%;
 	height: 80px;
+	position: relative;
 	border-radius: 5px;
 	background-color: #F9F9F9;
 	border: 1px solid #ebebeb;
@@ -293,6 +294,15 @@ label{
 .notification .buttonWrapper{
 	max-width: 30%;
 	float: right;
+}
+.notification .close-notification{
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: #CCC;
+	top: 30px;
+	right: -30px;
 }
 
 
@@ -439,6 +449,41 @@ label{
 	float: left;
 	margin-top: 45px;
 }
+
+
+/* MESSAGES */
+
+.message .from{
+	font-size: 1.5em;
+	float: left;
+	max-width: 60%;
+}
+.message .from span{
+	font-weight: lighter;
+	margin-right: 10px;
+}
+.message .received{
+	min-width: 30%;
+	width: 40%;
+	max-width: 50%;
+	float: left;
+	text-align: right;
+	font-size: 1em;
+	font-weight: lighter;
+	color: #FFF;
+	padding-right: 30px;
+}
+.unread-description{
+	color: #999;
+}
+.unread .header-content{
+	background-color: #943c56;
+}
+.read .header-content{
+	background-color: #BBB;
+}
+
+
 
 
 
