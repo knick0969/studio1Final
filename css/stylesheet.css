@@ -33,9 +33,15 @@ article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
+a{
+	text-decoration: none;
+	color: inherit;
+}
 body {
+	background-color: #ecf0f1;
 	line-height: 1;
 	font-family: 'Open Sans', sans-serif;
+	position: relative;
 }
 ol, ul {
 	list-style: none;
@@ -52,9 +58,6 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
-
-
 
 label{
 	font-size: 1.2em;
@@ -78,8 +81,6 @@ label{
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
 }
-
-
 
 
 /*   LOGIN    */
@@ -124,6 +125,7 @@ label{
 }
 .loginTitle h1{
 	width: 100%;
+	font-size: 2em;
 	margin-bottom: 15px;
 }
 .loginTitle p {
@@ -161,7 +163,283 @@ label{
 .loginFormWrapper .loginForm .loginBtn{
 	width: 100%;
 	height: 45px;
+	display: inline-block;
 }
+
+
+/* DASHBOARD HOME */
+
+
+.mainNav{
+	width: 250px;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	background-color: #279d59;
+	z-index: 9999;
+}
+.mainNav a{
+	width: 100%;
+	height: 80px;
+	position: relative;
+	line-height: 82px;
+	font-size: 1.1em;
+	color: #FFF;
+	letter-spacing: 1px;
+	border-top: 1px solid #238d50;
+	padding-left: 70px;
+	display: inline-block;
+	transition: .1s;
+}
+.mainNav a:hover{
+	background-color: #238d55;
+	transition: .1s;
+}
+.mainNav a:last-child{
+	border-bottom: 1px solid #238d50;
+}
+.mainNav a:before{
+	content: '';
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	background-size: cover;
+}
+.mainNav .logo{
+	width: 100%;
+	height: 150px;
+	padding: 30px;
+	background-image: url(../img/esba_logo.png);
+	background-size: 85%;
+	background-attachment: top;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.homeBtn:before{
+	background-image: url(../svg/home.svg);
+}
+.classBtn:before{
+	background-image: url(../svg/classes.svg);
+}
+.messagesBtn:before{
+	background-image: url(../svg/speech.svg);
+}
+.supportBtn:before{
+	background-image: url(../svg/support.svg);
+}
+.settingsBtn:before{
+	background-image: url(../svg/settings.svg);
+}
+.mainNav .active{
+	background-color: #238d55;
+}
+.mainNav .active:after{
+	content: '';
+	width: 15px;
+	height: 15px;
+	position: absolute;
+	background-color: #ecf0f1;
+	right: -7px;
+	top: 50%;
+	transform: rotate(45deg);
+	margin-top: -6px;
+}
+
+/* HEADER */
+.contentWrapper{
+	width: 100%;
+	height: 2000px;
+}
+.contentWrapper header{
+	width: 100%;
+	height: 70px;
+	background-color: #F9F9F9;
+	box-shadow: 0 0 5px 0 #999;
+	-webkit-box-shadow: 0 0 5px 0 #999;
+	padding-left: 290px;
+	margin-bottom: 25px;
+}
+.contentWrapper .content{
+	width: 100%;
+	padding-left: 290px;
+	padding-right: 30px;
+}
+
+.notification{
+	width: 100%;
+	height: 80px;
+	border-radius: 5px;
+	background-color: #F9F9F9;
+	border: 1px solid #ebebeb;
+	padding-left: 30px;
+	padding-top: 12px;
+	padding-right: 30px;
+	font-size: 1.3em;
+	color: #40494b;
+	font-weight: lighter;
+	line-height: 80px;
+	box-sizing: border-box;
+}
+.notification .description{
+	float: left;
+	max-width: 70%;
+	margin: 0;
+	padding: 0;
+	height: 60px;
+	line-height: 60px;
+}
+.notification .buttonWrapper{
+	max-width: 30%;
+	float: right;
+}
+
+
+/* FULL & HALF WIDTH DIVS */
+
+.full-width-box{
+	width: 100%;
+	min-height: 100px;
+	border-radius: 5px;
+	background-color: #F9F9F9;
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.full-width-container{
+	width: 100%;
+	display: inline-block;
+	clear: both;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.half-width-box{
+	width: 48%;
+	float: left;
+	min-height: 100px;
+	border-radius: 5px;
+	background-color: #F9F9F9;
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+}
+.half-width-box:first-child{
+	margin-right: 4%;
+}
+.header-content{
+	width: 100%;
+	height: 60px;
+}
+.red-header{
+	background-color: #943c56;
+}
+.blue-header{
+	background-color: #416870;
+}
+.gray-header{
+	background-color: #2e3638;
+}
+.header-content p{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	font-size: 1.2em;
+	color: #FFF;
+	padding-left: 25px;
+}
+.content-box {
+	width: 100%;
+	padding: 0px 25px 25px 25px;
+}
+
+/* HOME DASHBOARD - Overview preview within Half Width Box */
+
+.overview{
+}
+
+.line{
+	width: 100%;
+	height: 60px;
+	border-bottom: 1px solid #f1f1f1;
+	line-height: 60px;
+	font-size: 1.1em;
+	color: #999;
+}
+.line .name{
+	width: 85%;
+	float: left;
+	padding-left: 15px;
+}
+.line .score{
+	width: 15%;
+	float: left;
+	text-align: center;
+} 
+
+.view-all{
+	width: 100%;
+	height: 35px;
+	display: inline-block;
+	line-height: 60px;
+	text-align: center;
+	text-decoration: underline;
+	letter-spacing: 1px;
+	color: #777;
+	transition: 1.s;
+}
+.view-all:hover{
+	color: #555;
+	transition: 1.s;
+}
+
+.resource{
+	width: 100%;
+	clear: both;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #F9F9F9;
+}
+
+.description{
+	width: 60%;
+	float: left;
+	padding-right: 50px;
+}
+.description .date{
+	font-size: 0.85em;
+	color: #999;
+}
+.description .title{
+	font-size: 1.4em;
+	color: #333;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.description .text {
+	font-size: 0.95em;
+	line-height: 1.2em;
+	color: #777;
+}
+.image{
+	width: 25%;
+	height: 140px;
+	float: left;
+	display: inline-block;
+	border-radius: 8px;
+	overflow: hidden;
+	background-color: #EEE;
+	border: 1px solid #F9F9F9;
+	margin-right: 5%;
+}
+.resource .buttonWrapper{
+	width: 8%;
+	float: left;
+	margin-top: 45px;
+}
+
 
 
 /* GENERAL BUTTONS STYLING */
@@ -180,26 +458,28 @@ button{
 	border: none;
 	font-family: 'Open Sans', sans-serif;
 	outline: none; /* disables that blue border when btn is clicked */
+	text-align: center;
 }
 
 .buttons{
-	padding: 5px 10px;
+	width: 100%;
+	padding: 5px 18px;
 	border-radius: 5px;
 	position:relative;
 	min-height: 41px;
+	text-align: center;
+	line-height: 39px;
+	font-size: 1em;
 }
 .buttons:focus{
 	outline: none; /* disables that blue border when btn is clicked */
 }
 
-.buttons img{
-	padding-right: 5px;
-}
-
 .buttons p{
 	display: inline;
 	position: relative;
-	bottom: 2px;
+	font-size: 1.1em;
+	text-decoration: none;
 }
 
 /* DELETE BUTTON */
@@ -287,6 +567,23 @@ button{
 .confirmBtn:hover{
 	background-color: #36b234;
 	border-bottom: 5px solid #31a02b;
+	cursor: pointer;
+}
+
+/* NOTIFICATION BUTTON */
+
+.notificationBtn{
+	background-color: #40494b;
+	color: #ffffff;
+	border-bottom: 5px solid #262d2f;
+}
+.notificationBtn p{
+	font-size: 0.9em;
+	height: 20px;
+}
+
+.notificationBtn:hover{
+	background-color: #384042;
 	cursor: pointer;
 }
 
