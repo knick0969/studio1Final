@@ -1,5 +1,5 @@
 $(document).ready(function(){
         $('.showAnswer').click(function(){
-            $('.description .text').slideToggle(300)
+            $(this).parent('.support').find('.text').slideToggle(300)
         });
 });
