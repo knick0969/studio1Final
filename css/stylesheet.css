@@ -266,6 +266,37 @@ label{
 	padding-left: 290px;
 	padding-right: 30px;
 }
+.contentWrapper .user {
+	float: right;
+	width: 255px;
+	height: 60px;
+	margin-right: 15px;
+	text-align: right;
+}
+.contentWrapper .user .welcome{
+	width: 200px;
+	float: left;
+	margin-top: 15px;
+	margin-right: 10px;
+}
+.contentWrapper .user .welcome p{
+	margin-bottom: 5px;
+	font-size: 0.9em;
+	color: #BBB;
+}
+.contentWrapper .user .welcome span{
+	font-size: 1.1em;
+	color: #777;
+}
+.contentWrapper .user .profilePic{
+	width: 45px;
+	height: 45px;
+	background-color: #CCC;
+	border: 2px solid #FFF;
+	border-radius: 50%;
+	float: right;
+	margin-top: 12px;
+}
 
 .notification{
 	width: 100%;
@@ -305,6 +336,43 @@ label{
 	right: -30px;
 }
 
+/* SETTINGS */
+
+.settings-title{
+	font-size: 1.5em;
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+.settings-subtitle{
+	font-size: 1.1em;
+	margin-top: 40px;
+	margin-bottom: 10px;
+	color: #444;
+}
+.name span{
+	color: #444;
+}
+.settings .line .state{
+	width: 110px;
+	height: 45px;
+	border-radius: 8px;
+	float: right;
+	text-align: center;
+	line-height: 25px;
+	padding: 10px 5px;
+	margin-top: 7px;
+	color: #FFF;
+}
+.settings .line .change{
+	background-color: #CCC;
+}
+.settings .line .inactive{
+	color: #BBB;
+	background-color: #EEE;
+}
+.settings .line .active{
+	background-color: #279d59;
+}
 
 /* FULL & HALF WIDTH DIVS */
 
@@ -451,6 +519,35 @@ label{
 }
 
 
+
+/* SUPPORT */
+
+.support{
+	width: 100%;
+	clear: both;
+	display: inline-block;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid #F9F9F9;
+}
+.support .description{
+	width: 85%;
+	float: left;
+}
+.support .description .title{
+	width: 100%;
+}
+.support .description .text{
+	width: 100%;
+	display: none;
+}
+.support .buttonWrapper{
+	float: left;
+	width: 15%;
+}
+
+
+
 /* MESSAGES */
 
 .message .from{
@@ -483,7 +580,33 @@ label{
 	background-color: #BBB;
 }
 
+/* MESSAGE READING PAGE */
 
+.message-text {
+	width: 100%;
+}
+.message-text img{
+	width: 50%;
+	margin-left: 60px;
+	margin-bottom: 50px;
+	float: right;
+}
+.message-text .date{
+	font-size: 0.85em;
+	color: #999;
+}
+.message-text .title{
+	font-size: 1.4em;
+	color: #333;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	font-weight: bold;
+}
+.message-text .text {
+	font-size: 1.05em;
+	line-height: 1.4em;
+	color: #777;
+}
 
 
 
@@ -629,6 +752,16 @@ button{
 
 .notificationBtn:hover{
 	background-color: #384042;
+	cursor: pointer;
+}
+
+/* GO BACK BUTTON */
+.go-back{
+	width: 200px;
+	height: 45px;
+	background-color: #CCC;
+	color: #ffffff;
+	border-bottom: 5px solid #BBB;
 	cursor: pointer;
 }
 
