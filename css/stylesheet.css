@@ -166,11 +166,7 @@ label{
 	display: inline-block;
 }
 
-
-<<<<<<< HEAD
 /* DASHBOARD HOME */
-
-
 .mainNav{
 	width: 250px;
 	height: 100%;
@@ -251,6 +247,7 @@ label{
 /* HEADER */
 .contentWrapper{
 	width: 100%;
+	margin: 0 auto;
 	height: 2000px;
 }
 .contentWrapper header{
@@ -264,6 +261,8 @@ label{
 }
 .contentWrapper .content{
 	width: 99%;
+	max-width: 1200px;
+	margin: 0 auto;
 	padding-left: 290px;
 	padding-right: 30px;
 }
@@ -329,12 +328,17 @@ label{
 }
 .notification .close-notification{
 	position: absolute;
-	width: 20px;
-	height: 20px;
+	width: 27px;
+	height: 27px;
 	border-radius: 50%;
+	background-image: url(../svg/close.svg);
+	background-position: 50% 50%;
+	background-size: 50%;
 	background-color: #CCC;
-	top: 30px;
-	right: -30px;
+	background-repeat: no-repeat;
+	top: 25px;
+	right: -35px;
+	cursor: pointer;
 }
 
 /* SETTINGS */
@@ -355,24 +359,40 @@ label{
 }
 .settings .line .state{
 	width: 110px;
-	height: 45px;
+	height: 40px;
 	border-radius: 8px;
 	float: right;
 	text-align: center;
-	line-height: 25px;
+	line-height: 20px;
 	padding: 10px 5px;
 	margin-top: 7px;
 	color: #FFF;
+	cursor: pointer;
+	font-size: 0.8em;
 }
 .settings .line .change{
+	width: 110px;
+	height: 40px;
+	border-radius: 8px;
+	float: right;
+	text-align: center;
+	line-height: 20px;
+	padding: 10px 5px;
+	margin-top: 7px;
+	color: #999;
+	cursor: pointer;
+	font-size: 0.8em;
 	background-color: #CCC;
+	border-bottom: 4px solid #BBB;
 }
 .settings .line .inactive{
 	color: #BBB;
 	background-color: #EEE;
+	border-bottom: 4px solid #BBB;
 }
 .settings .line .active{
 	background-color: #279d59;
+	border-bottom: 4px solid #238d55;
 }
 
 /* FULL & HALF WIDTH DIVS */
@@ -527,9 +547,9 @@ label{
 	width: 100%;
 	clear: both;
 	display: inline-block;
-	padding-top: 20px;
-	padding-bottom: 20px;
-	border-bottom: 1px solid #F9F9F9;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	border-bottom: 1px solid #efefef;
 }
 .support .description{
 	width: 85%;
@@ -611,10 +631,134 @@ label{
 
 
 
+
+@media only screen 
+  and (max-width: 600px) {
+	.mainNav{
+		width: 100%;
+		height: 80px !important;
+		min-height: 80px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+		background-color: #279d59;
+		z-index: 9999;
+	}
+	.mainNav a{
+		width: 100%;
+		height: 80px;
+		position: relative;
+		line-height: 82px;
+		font-size: 1.1em;
+		color: #FFF;
+		letter-spacing: 1px;
+		border-top: 1px solid #238d50;
+		padding-left: 70px;
+		display: inline-block;
+		transition: .1s;
+	}
+	.mainNav a:hover{
+		background-color: #238d55;
+		transition: .1s;
+	}
+	.mainNav a:last-child{
+		border-bottom: 1px solid #238d50;
+	}
+	.mainNav a:before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 25px;
+		left: 20px;
+		background-size: cover;
+	}
+	.mainNav .logo{
+		width: 200px;
+		height: 60px;
+		padding: 20px;
+		background-image: url(../img/esba_logo.png);
+		background-size: 85%;
+		background-attachment: top;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.contentWrapper .content{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper header{
+		display: none;
+	}
+	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 40%;
+		font-size: 0.8em;
+	}
+	
+	.contentWrapper .content .header-content .from{
+		max-width: 50%;
+		font-size: 1.1em;
+	}
+	.contentWrapper .content .header-content .received{
+		max-width: 50%;
+		font-size: 0.9em;
+	}
+	.resource .image{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+	.resource .description{
+		width: 100%;
+		float: none;
+	}
+	.resource .buttonWrapper{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+}
+
+@media only screen 
+  and (min-width: 600px) and (max-width: 1099px) {
+  	.contentWrapper .content{
+  		padding-left: 110px;
+  	}
+  	.mainNav{
+		width: 250px;
+		height: 100%;
+		min-height: 100%;
+		position: absolute;
+		background-color: #279d59;
+		z-index: 9999;
+	}
+   	.shrinkNav{
+   		width: 80px;
+   		overflow: hidden;
+    }
+    .shrinkNav a p{
+    	display: none;
+    }
+}
+
+
 /* GENERAL BUTTONS STYLING */
 /* I brought  all these Styles to the bottom of the stylesheet cause then there's no way
 for them to be overwritten by another class, as they are supposed to be the "Master Style" */
-=======
 /* SCORING SHEET */
 
 .individualScore{
@@ -694,7 +838,6 @@ input[type=radio].score5:checked + label {
 	color: white;
 	font-weight: bold;
 }
->>>>>>> ccac60af2e1d003aaaabeb1a6be950a05d1da283
 
 
 
@@ -713,7 +856,8 @@ button{
 
 .buttons{
 	width: 100%;
-	padding: 5px 18px;
+	/* padding 5px 18px was the previous value, changed it to center the text */
+	padding: 5px;
 	border-radius: 5px;
 	position:relative;
 	min-height: 41px;
@@ -730,6 +874,7 @@ button{
 	position: relative;
 	font-size: 1.1em;
 	text-decoration: none;
+	width: 100%;
 }
 
 /* DELETE BUTTON */
@@ -854,8 +999,7 @@ button{
 	border-bottom-width: 1px;
 	margin-top:4px;
 }
-<<<<<<< HEAD
-=======
+
 
 
 /* TEXT AREA INPUT */
@@ -878,4 +1022,5 @@ button{
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
 }
->>>>>>> ccac60af2e1d003aaaabeb1a6be950a05d1da283
+
+
