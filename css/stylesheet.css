@@ -167,7 +167,6 @@ label{
 }
 
 
-<<<<<<< HEAD
 /* DASHBOARD HOME */
 
 
@@ -520,6 +519,54 @@ label{
 }
 
 
+/* TEACHER SCORE INPUT */
+
+.score-page-header{
+	width: 100%;
+
+}
+
+.score-page-header h1{
+	font-size: 1.2em;
+	color: #999;
+}
+
+.score-page-header h3{
+	font-size: 0.9em;
+	font-weight: 200;
+	padding: 5px 0px;
+	color: #999;
+}
+
+.score-page-header h1:after{
+	content: "| Tuesday 09/11/2016";
+	display: inline-block;
+	font-size: 0.8em;
+	font-weight: 200;
+	padding-left: 10px;
+	color: #999;
+}
+
+.individualScore h1{
+	font-size: 1.4em;
+	weight: 200;
+	color: #999;
+	text-align: center;
+}
+
+.scoreForm{
+	display: inline-block;
+}
+
+.scoreForm:before{
+	content: "Todays Score:";
+	display: inline-block;
+}
+
+.absentBox{
+	display: inline-block;
+}
+
 
 /* SUPPORT */
 
@@ -614,11 +661,14 @@ label{
 /* GENERAL BUTTONS STYLING */
 /* I brought  all these Styles to the bottom of the stylesheet cause then there's no way
 for them to be overwritten by another class, as they are supposed to be the "Master Style" */
-=======
 /* SCORING SHEET */
 
 .individualScore{
-	margin-top: 100px;
+	height:73px;
+}
+
+.scoreForm{
+	padding-top: 25px;
 }
 
 .scoreForm:focus{
@@ -694,7 +744,6 @@ input[type=radio].score5:checked + label {
 	color: white;
 	font-weight: bold;
 }
->>>>>>> ccac60af2e1d003aaaabeb1a6be950a05d1da283
 
 
 
@@ -854,8 +903,6 @@ button{
 	border-bottom-width: 1px;
 	margin-top:4px;
 }
-<<<<<<< HEAD
-=======
 
 
 /* TEXT AREA INPUT */
@@ -878,4 +925,3 @@ button{
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
 }
->>>>>>> ccac60af2e1d003aaaabeb1a6be950a05d1da283
