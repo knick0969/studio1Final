@@ -652,6 +652,39 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	padding-right: 10px;
 }
 
+
+/* TEACHER SCORE INPUT SUCCESS*/
+
+.score-page-success-header{
+	text-align: center;
+}
+
+.score-page-success-header h1{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.thumbsUp{
+	width: 30px;
+	height: 30px;
+	background-color: green;
+	margin: 10px auto;
+}
+
+.classOverview{
+	background-color: #51c745;
+	padding: 0px 5px !important;
+	font-size: 0.7em !important;
+	width: auto !important;
+	color: white;
+	font-weight: bold;
+}
+
+.classOverview:before{
+	content: "" !important;
+	display: none !important;
+}
+
 /* SUPPORT */
 
 .support{
