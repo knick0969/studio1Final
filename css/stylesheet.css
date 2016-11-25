@@ -664,6 +664,15 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	font-weight: bold;
 }
 
+.score-page-success-header h1:after{
+	content: "Tuesday - 09/11/2016";
+	display: block;
+	color: #999;
+	font-weight: 200;
+	font-size: 0.7em;
+	padding: 15px 0px 20px 0px;
+}
+
 .thumbsUp{
 	width: 30px;
 	height: 30px;
@@ -676,6 +685,7 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	padding: 0px 5px !important;
 	font-size: 0.7em !important;
 	width: auto !important;
+	height: 20px !important;
 	color: white;
 	font-weight: bold;
 }
@@ -683,6 +693,48 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 .classOverview:before{
 	content: "" !important;
 	display: none !important;
+}
+
+.setScores:before{
+	content: "Todays Score:";
+	display: inline-block;
+	color: #999;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.setScores{
+	margin: 0 auto;
+}
+
+.setBox1, .setBox2, .setBox3, .setBox4, .setBox5{
+	display: inline-block;
+	height: 68px;
+	width: 94.45px;
+	border: 1px solid #e6e6e6;
+	text-align: middle;
+	font-size: 1.4em;
+	color: #d9d9d9;
+	padding:20px 40px;
+	margin-right: -6px;
+}
+
+.setBox1Selected{
+	background-color: #d0242a;
+	color: white;
+	font-weight: bold;
+}
+
+.setBox2Selected{
+	background-color: #f1b040;
+	color: white;
+	font-weight: bold;
+}
+
+.setBox4Selected{
+	background-color: #51c745;
+	color: white;
+	font-weight: bold;
 }
 
 /* SUPPORT */
