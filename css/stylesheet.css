@@ -527,7 +527,7 @@ label{
 }
 
 .score-page-header h1{
-	font-size: 1.2em;
+	font-size: 1.3em;
 	color: #999;
 }
 
@@ -541,7 +541,7 @@ label{
 .score-page-header h1:after{
 	content: "| Tuesday 09/11/2016";
 	display: inline-block;
-	font-size: 0.8em;
+	font-size: 0.7em;
 	font-weight: 200;
 	padding-left: 10px;
 	color: #999;
@@ -557,7 +557,7 @@ label{
 	font-weight: 200;
 	color: #999;
 	text-align: center;
-	padding: 30px 0px 10px 0px;
+	padding: 40px 0px 20px 0px;
 }
 
 .scoreForm{
@@ -639,12 +639,17 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 }
 
 .studentScoreTally{
-	margin-top: 35px;
+	margin-top: 40px;
 	color: #999;
 }
 
 .studentScoreTally span{
 	font-weight: bold;
+}
+
+.buttonSection{
+	text-align: right;
+	padding-right: 10px;
 }
 
 /* SUPPORT */
@@ -828,6 +833,10 @@ input[type=radio].score5:checked + label {
 	height: 45px;
 }
 
+.buttonSpace{
+	display: inline;
+}
+
 button{
 	border: none;
 	font-family: 'Open Sans', sans-serif;
@@ -836,8 +845,9 @@ button{
 }
 
 .buttons{
-	width: 100%;
+	width: 150px;
 	padding: 5px 18px;
+	margin-left: 5px;
 	border-radius: 5px;
 	position:relative;
 	min-height: 41px;
@@ -933,6 +943,7 @@ button{
 }
 
 .confirmBtn{
+	width: 150px;
 	background-color: #27a627;
 	color: #ffffff;
 	border-bottom: 5px solid #219621;
