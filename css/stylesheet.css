@@ -549,27 +549,20 @@ label{
 
 .individualScore{
 	text-align: center;
-	margin-bottom: 30px;
+	margin: 30px;
 }
 
 .individualScore h1{
 	font-size: 1.4em;
-	font-weight: 200;
+	font-weight: bold;
 	color: #999;
 	text-align: center;
-	padding: 40px 0px 20px 0px;
+	padding: 32px 50px 32px 0px;
+	display: inline-block;
 }
 
 .scoreForm{
 	display: inline-block;
-}
-
-.scoreForm:before{
-	content: "Todays Score:";
-	display: inline-block;
-	color: #999;
-	padding-right: 20px;
-	font-weight: bold;
 }
 
 .absentBox{
@@ -639,7 +632,7 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 }
 
 .studentScoreTally{
-	margin-top: 40px;
+	margin-top: 0px;
 	color: #999;
 }
 
@@ -652,6 +645,117 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	padding-right: 10px;
 }
 
+
+/* TEACHER SCORE INPUT SUCCESS*/
+
+.full-width-box{
+	position: relative;
+}
+
+.score-page-success-header{
+	text-align: center;
+}
+
+.score-page-success-header h1{
+	font-size: 1.4em;
+	font-weight: bold;
+}
+
+.score-page-success-header h1:after{
+	content: "Tuesday - 09/11/2016";
+	display: block;
+	color: #999;
+	font-weight: 200;
+	font-size: 0.7em;
+	padding: 15px 0px 20px 0px;
+}
+
+.thumbsUp{
+	width: 30px;
+	height: 30px;
+	background-color: green;
+	margin: 10px auto;
+}
+
+.classOverview{
+	background-color: #51c745;
+	padding: 0px 5px !important;
+	font-size: 0.7em !important;
+	width: auto !important;
+	height: 20px !important;
+	color: white;
+	font-weight: bold;
+}
+
+.classOverview:before{
+	content: "" !important;
+	display: none !important;
+}
+
+.editScores{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+}
+
+.scoreEdit{
+	background-color: transparent;
+	font-size: 0.9em !important;
+	color: #999;
+}
+
+.setScores{
+	margin: 0 auto;
+	display: inline-block;
+}
+
+.setBox1, .setBox2, .setBox3, .setBox4, .setBox5{
+	display: inline-block;
+	height: 68px;
+	width: 94.45px;
+	border: 1px solid #e6e6e6;
+	text-align: middle;
+	font-size: 1.4em;
+	color: #d9d9d9;
+	padding:20px 40px;
+	margin-right: -6px;
+}
+
+.setBox1Selected{
+	background-color: #d0242a;
+	color: white;
+	font-weight: bold;
+}
+
+.setBox2Selected{
+	background-color: #f1b040;
+	color: white;
+	font-weight: bold;
+}
+
+.setBox4Selected{
+	background-color: #51c745;
+	color: white;
+	font-weight: bold;
+}
+
+
+/* TEACHER SCORE INPUT FAILURE */
+
+.inputError:before{
+	content: "You're missing Peter Parker's Score";
+	display: block;
+	color: red;
+}
+
+.inputError{
+	background-color: rgba(256, 0, 0, 0.2);
+	padding: 30px 0px;
+}
+
+.setBoxError{
+	background-color: white !important;
+}
 /* SUPPORT */
 
 .support{
