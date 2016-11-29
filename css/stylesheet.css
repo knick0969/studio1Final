@@ -1109,9 +1109,17 @@ button{
 	color: #666;
 	padding-left: 10px;
 }
+
 .textArea:focus{
 	transition: .1s;
 	-webkit-box-shadow: 0 0 10px 0 #d6d7f3;
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
+}
+
+
+@media (min-width: 1220px){
+	.individualScore{
+		margin: 30px 0px;
+	}
 }
