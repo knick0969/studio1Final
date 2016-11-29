@@ -739,6 +739,23 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	font-weight: bold;
 }
 
+
+/* TEACHER SCORE INPUT FAILURE */
+
+.inputError:before{
+	content: "You're missing Peter Parker's Score";
+	display: block;
+	color: red;
+}
+
+.inputError{
+	background-color: rgba(256, 0, 0, 0.2);
+	padding: 30px 0px;
+}
+
+.setBoxError{
+	background-color: white !important;
+}
 /* SUPPORT */
 
 .support{
