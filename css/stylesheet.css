@@ -172,8 +172,9 @@ label{
 	height: 100%;
 	min-height: 100%;
 	position: absolute;
-	background-color: #279d59;
+	background-color: #F9F9F9;
 	z-index: 9999;
+	box-shadow: 0px 0px 10px #BBB;
 }
 .mainNav a{
 	width: 100%;
@@ -181,19 +182,20 @@ label{
 	position: relative;
 	line-height: 82px;
 	font-size: 1.1em;
-	color: #FFF;
+	color: #279d59;
 	letter-spacing: 1px;
-	border-top: 1px solid #238d50;
+	border-top: 1px solid #EFEFEF;
 	padding-left: 70px;
 	display: inline-block;
 	transition: .1s;
+	overflow: hidden;
 }
 .mainNav a:hover{
-	background-color: #238d55;
+	background-color: #e9e9e9;
 	transition: .1s;
 }
 .mainNav a:last-child{
-	border-bottom: 1px solid #238d50;
+	border-bottom: 1px solid #EFEFEF;
 }
 .mainNav a:before{
 	content: '';
@@ -230,14 +232,14 @@ label{
 	background-image: url(../svg/settings.svg);
 }
 .mainNav .active{
-	background-color: #238d55;
+	background-color: #e9e9e9;
 }
 .mainNav .active:after{
 	content: '';
 	width: 15px;
 	height: 15px;
 	position: absolute;
-	background-color: #ecf0f1;
+	background-color: #279d59;
 	right: -7px;
 	top: 50%;
 	transform: rotate(45deg);
@@ -253,7 +255,7 @@ label{
 .contentWrapper header{
 	width: 100%;
 	height: 70px;
-	background-color: #F9F9F9;
+	background-color: #EEE;
 	box-shadow: 0 0 5px 0 #999;
 	-webkit-box-shadow: 0 0 5px 0 #999;
 	padding-left: 290px;
@@ -323,7 +325,7 @@ label{
 	line-height: 60px;
 }
 .notification .buttonWrapper{
-	max-width: 30%;
+	max-width: 40%;
 	float: right;
 }
 .notification .close-notification{
@@ -501,8 +503,8 @@ label{
 	border-bottom: 1px solid #F9F9F9;
 }
 
-.description{
-	width: 60%;
+.resource .description{
+	width: 50%;
 	float: left;
 	padding-right: 50px;
 }
@@ -539,7 +541,143 @@ label{
 	margin-top: 45px;
 }
 
+.resource .buttonWrapper .notificationBtn{
+	width: 120px;
+}
 
+
+/* TEACHER SCORE INPUT */
+
+.score-page-header{
+	width: 100%;
+
+}
+
+.score-page-header h1{
+	font-size: 1.3em;
+	color: #999;
+}
+
+.score-page-header h3{
+	font-size: 0.9em;
+	font-weight: 200;
+	padding: 5px 0px;
+	color: #999;
+}
+
+.score-page-header h1:after{
+	content: "| Tuesday 09/11/2016";
+	display: inline-block;
+	font-size: 0.7em;
+	font-weight: 200;
+	padding-left: 10px;
+	color: #999;
+}
+
+.individualScore{
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.individualScore h1{
+	font-size: 1.4em;
+	font-weight: 200;
+	color: #999;
+	text-align: center;
+	padding: 40px 0px 20px 0px;
+}
+
+.scoreForm{
+	display: inline-block;
+}
+
+.scoreForm:before{
+	content: "Todays Score:";
+	display: inline-block;
+	color: #999;
+	padding-right: 20px;
+	font-weight: bold;
+}
+
+.absentBox{
+	display: inline-block;
+	margin-left: 90px;
+	color: #999;
+}
+
+.topSpan{
+	display:block;
+}
+
+input[type=checkbox   ]:not(old){
+  width     : 2em;
+  margin    : 0;
+  padding   : 0;
+  font-size : 1em;
+  opacity   : 0;
+}
+
+input[type=checkbox   ].absentTickBox:not(old) + label{
+  display      : block;
+  margin-left  : -2em;
+  line-height  : 1.5em;
+}
+
+input[type=checkbox   ].absentTickBox:not(old) + label > span{
+  display          : block;
+  width            : 0.875em;
+  height           : 0.875em;
+  margin           : 0.25em 0.5em 0.25em 0.25em;
+  border           : 0.0625em solid rgb(192,192,192);
+  border-radius    : 0.25em;
+  background       : rgb(224,224,224);
+  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
+  vertical-align   : bottom;
+  margin: 0 auto;
+}
+
+input[type=checkbox   ].absentTickBox:not(old):checked + label > span{
+  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
+  display: block;
+}
+
+input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
+  display          : block;
+  width            : 0.5em;
+  height           : 0.5em;
+  margin           : 0.125em;
+  border           : 0.0625em solid rgb(115,153,77);
+  border-radius    : 0.125em;
+  background       : rgb(153,204,102);
+  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
+  display: block;
+}
+
+.studentScoreTally{
+	margin-top: 40px;
+	color: #999;
+}
+
+.studentScoreTally span{
+	font-weight: bold;
+}
+
+.buttonSection{
+	text-align: right;
+	padding-right: 10px;
+}
 
 /* SUPPORT */
 
@@ -641,7 +779,7 @@ label{
 		overflow: hidden;
 		position: relative;
 		margin-bottom: 20px;
-		background-color: #279d59;
+		background-color: #F9F9F9;
 		z-index: 9999;
 	}
 	.mainNav a{
@@ -662,7 +800,6 @@ label{
 		transition: .1s;
 	}
 	.mainNav a:last-child{
-		border-bottom: 1px solid #238d50;
 	}
 	.mainNav a:before{
 		content: '';
@@ -735,6 +872,21 @@ label{
 
 @media only screen 
   and (min-width: 600px) and (max-width: 1099px) {
+  	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 40%;
+		font-size: 0.8em;
+	}
   	.contentWrapper .content{
   		padding-left: 110px;
   	}
@@ -743,7 +895,7 @@ label{
 		height: 100%;
 		min-height: 100%;
 		position: absolute;
-		background-color: #279d59;
+		background-color: #F9F9F9;
 		z-index: 9999;
 	}
    	.shrinkNav{
@@ -754,15 +906,43 @@ label{
     	display: none;
     }
 }
+@media only screen 
+  and (max-width: 700px) {
+  	.full-width-container .half-width-box{
+  		width: 100%;
+  		margin-top: 30px;
+  	}
+  	.full-width-container .half-width-box:first-child{
+  		margin-top: 0px;
+  	}
 
+}
+@media only screen 
+  and (max-width: 900px) {
+  	.content-box .resource .image{
+  		width: 100%;
+  		float: none;
+  		margin-bottom: 30px;
+  	}
+  	.content-box .resource .description{
+  		width: 100%;
+  		float: none;
+  		
+  	}
+  	.content-box .resource .buttonWrapper{
+  		width: 100%;
+  		margin-top: 50px;
+  		text-align: right;
+  	}
+}
 
 /* GENERAL BUTTONS STYLING */
 /* I brought  all these Styles to the bottom of the stylesheet cause then there's no way
 for them to be overwritten by another class, as they are supposed to be the "Master Style" */
 /* SCORING SHEET */
 
-.individualScore{
-	margin-top: 100px;
+.scoreForm{
+	padding-top: 25px;
 }
 
 .scoreForm:focus{
@@ -847,6 +1027,10 @@ input[type=radio].score5:checked + label {
 	height: 45px;
 }
 
+.buttonSpace{
+	display: inline;
+}
+
 button{
 	border: none;
 	font-family: 'Open Sans', sans-serif;
@@ -858,6 +1042,8 @@ button{
 	width: 100%;
 	/* padding 5px 18px was the previous value, changed it to center the text */
 	padding: 5px;
+	padding: 5px 18px;
+	margin-left: 5px;
 	border-radius: 5px;
 	position:relative;
 	min-height: 41px;
@@ -954,6 +1140,7 @@ button{
 }
 
 .confirmBtn{
+	width: 150px;
 	background-color: #27a627;
 	color: #ffffff;
 	border-bottom: 5px solid #219621;
@@ -1000,8 +1187,6 @@ button{
 	margin-top:4px;
 }
 
-
-
 /* TEXT AREA INPUT */
 
 .textArea{
@@ -1022,5 +1207,3 @@ button{
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
 }
-
-
