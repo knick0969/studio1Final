@@ -915,6 +915,17 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
   	.full-width-container .half-width-box:first-child{
   		margin-top: 0px;
   	}
+  	.support .description{
+  		width: 100%;
+  		float: none;
+  	}
+  	.support .buttonWrapper{
+  		width: 25%;
+  		left: 50%;
+  		position: relative;
+  		margin-left: -12.5%;
+  		margin-top: 20px;
+  	}
 
 }
 @media only screen 
