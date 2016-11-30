@@ -261,11 +261,19 @@ label{
 }
 /* MENU STYLING */
 .mainNav .showMenu .navIcon {
+<<<<<<< HEAD
   width: 50px;
   height: 45px;
   position: relative;
   margin: 0 auto;
   margin-top: 22px;
+=======
+  width: 40px;
+  height: 45px;
+  position: relative;
+  margin: 0 auto;
+  margin-top: 25px;
+>>>>>>> frontend
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -279,7 +287,11 @@ label{
 .mainNav .showMenu .navIcon span {
   display: block;
   position: absolute;
+<<<<<<< HEAD
   height: 6px;
+=======
+  height: 5px;
+>>>>>>> frontend
   width: 100%;
   background: #DDD;
   border-radius: 9px;
@@ -302,14 +314,22 @@ label{
   transform-origin: left center;
 }
 .mainNav .showMenu .navIcon span:nth-child(2) {
+<<<<<<< HEAD
   top: 13px;
+=======
+  top: 11px;
+>>>>>>> frontend
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
 .mainNav .showMenu .navIcon span:nth-child(3) {
+<<<<<<< HEAD
   top: 26px;
+=======
+  top: 22px;
+>>>>>>> frontend
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -332,7 +352,11 @@ label{
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
+<<<<<<< HEAD
   top: 32px;
+=======
+  top: 26px;
+>>>>>>> frontend
   left: 8px;
 }
 
@@ -801,9 +825,12 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 .individualScore{
 	text-align: center;
 	margin: 30px;
+<<<<<<< HEAD
 =======
 	margin: 30px 0px;
 >>>>>>> 028a1b3a4cf1446ae8c9d3724864b253b944003b
+=======
+>>>>>>> frontend
 }
 
 .individualScore h1{
@@ -1155,12 +1182,15 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	.mainNav .logo{
 		width: 200px;
 		height: 60px;
-		padding: 20px;
+		margin-top: 8px;
 		background-image: url(../img/esba_logo.png);
 		background-size: 85%;
 		background-attachment: top;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+	.mainNav .logo:hover{
+		background-color: #F9F9F9;
 	}
 
 	.contentWrapper .content{
@@ -1189,12 +1219,14 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	}
 	
 	.contentWrapper .content .header-content .from{
-		max-width: 50%;
+		max-width: 60%;
 		font-size: 1.1em;
 	}
 	.contentWrapper .content .header-content .received{
-		max-width: 50%;
+		max-width: 40%;
+		margin-top: 10px;
 		font-size: 0.9em;
+		line-height: 1.4em;
 	}
 	.resource .image{
 		width: 100%;
@@ -1281,7 +1313,7 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
   	.content-box .resource .description{
   		width: 100%;
   		float: none;
-  		
+  		padding-right: 0;
   	}
   	.content-box .resource .buttonWrapper{
   		width: 100%;
