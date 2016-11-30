@@ -576,7 +576,7 @@ label{
 
 .individualScore{
 	text-align: center;
-	margin: 30px;
+	margin: 30px 0px;
 }
 
 .individualScore h1{
@@ -871,175 +871,6 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	color: #777;
 }
 
-
-
-
-@media only screen 
-  and (max-width: 600px) {
-	.mainNav{
-		width: 100%;
-		height: 80px !important;
-		min-height: 80px;
-		overflow: hidden;
-		position: relative;
-		margin-bottom: 20px;
-		background-color: #F9F9F9;
-		z-index: 9999;
-	}
-	.mainNav a{
-		width: 100%;
-		height: 80px;
-		position: relative;
-		line-height: 82px;
-		font-size: 1.1em;
-		color: #FFF;
-		letter-spacing: 1px;
-		border-top: 1px solid #238d50;
-		padding-left: 70px;
-		display: inline-block;
-		transition: .1s;
-	}
-	.mainNav a:hover{
-		background-color: #238d55;
-		transition: .1s;
-	}
-	.mainNav a:last-child{
-	}
-	.mainNav a:before{
-		content: '';
-		width: 30px;
-		height: 30px;
-		position: absolute;
-		top: 25px;
-		left: 20px;
-		background-size: cover;
-	}
-	.mainNav .logo{
-		width: 200px;
-		height: 60px;
-		padding: 20px;
-		background-image: url(../img/esba_logo.png);
-		background-size: 85%;
-		background-attachment: top;
-		background-position: center;
-		background-repeat: no-repeat;
-	}
-
-	.contentWrapper .content{
-		width: 90%;
-		margin: 0 auto;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.contentWrapper header{
-		display: none;
-	}
-	.contentWrapper .content .notification {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.contentWrapper .content .notification .description {
-		max-width: 60%;
-		font-size: 0.75em;
-		line-height: 1.4em;
-		padding-top: 7px;
-	}
-	.contentWrapper .content .notification .buttonWrapper {
-		max-width: 40%;
-		font-size: 0.8em;
-	}
-	
-	.contentWrapper .content .header-content .from{
-		max-width: 50%;
-		font-size: 1.1em;
-	}
-	.contentWrapper .content .header-content .received{
-		max-width: 50%;
-		font-size: 0.9em;
-	}
-	.resource .image{
-		width: 100%;
-		float: none;
-		margin-top: 25px;
-	}
-	.resource .description{
-		width: 100%;
-		float: none;
-	}
-	.resource .buttonWrapper{
-		width: 100%;
-		float: none;
-		margin-top: 25px;
-	}
-}
-
-@media only screen 
-  and (min-width: 600px) and (max-width: 1099px) {
-  	.contentWrapper .content .notification {
-		width: 100%;
-		padding-left: 10px;
-		padding-right: 10px;
-	}
-	.contentWrapper .content .notification .description {
-		max-width: 60%;
-		font-size: 0.75em;
-		line-height: 1.4em;
-		padding-top: 7px;
-	}
-	.contentWrapper .content .notification .buttonWrapper {
-		max-width: 40%;
-		font-size: 0.8em;
-	}
-  	.contentWrapper .content{
-  		padding-left: 110px;
-  	}
-  	.mainNav{
-		width: 250px;
-		height: 100%;
-		min-height: 100%;
-		position: absolute;
-		background-color: #F9F9F9;
-		z-index: 9999;
-	}
-   	.shrinkNav{
-   		width: 80px;
-   		overflow: hidden;
-    }
-    .shrinkNav a p{
-    	display: none;
-    }
-}
-@media only screen 
-  and (max-width: 700px) {
-  	.full-width-container .half-width-box{
-  		width: 100%;
-  		margin-top: 30px;
-  	}
-  	.full-width-container .half-width-box:first-child{
-  		margin-top: 0px;
-  	}
-
-}
-@media only screen 
-  and (max-width: 900px) {
-  	.content-box .resource .image{
-  		width: 100%;
-  		float: none;
-  		margin-bottom: 30px;
-  	}
-  	.content-box .resource .description{
-  		width: 100%;
-  		float: none;
-  		
-  	}
-  	.content-box .resource .buttonWrapper{
-  		width: 100%;
-  		margin-top: 50px;
-  		text-align: right;
-  	}
-}
-
 /* GENERAL BUTTONS STYLING */
 /* I brought  all these Styles to the bottom of the stylesheet cause then there's no way
 for them to be overwritten by another class, as they are supposed to be the "Master Style" */
@@ -1192,6 +1023,7 @@ button{
 }
 
 .deleteBtn, .cancelBtn, .backBtn{
+	width: 150px;
 	background-color: #eaeaea;
 	color: #a09f9f;
 	border-bottom: 5px solid #cdcdcd;
@@ -1311,3 +1143,241 @@ button{
 	box-shadow: 0 0 10px 0 #d6d7f3;
 	outline: #CCC;
 }
+
+
+@media only screen
+	and (max-width: 1200px) {
+		.individualScore h1{
+			display: block;
+			padding: 0px;
+		}
+
+		.studentScoreTally{
+			margin-top: 25px;
+		}
+	}
+
+@media only screen 
+  and (max-width: 600px) {
+	.mainNav{
+		width: 100%;
+		height: 80px !important;
+		min-height: 80px;
+		overflow: hidden;
+		position: relative;
+		margin-bottom: 20px;
+		background-color: #F9F9F9;
+		z-index: 9999;
+	}
+	.mainNav a{
+		width: 100%;
+		height: 80px;
+		position: relative;
+		line-height: 82px;
+		font-size: 1.1em;
+		color: #FFF;
+		letter-spacing: 1px;
+		border-top: 1px solid #238d50;
+		padding-left: 70px;
+		display: inline-block;
+		transition: .1s;
+	}
+	.mainNav a:hover{
+		background-color: #238d55;
+		transition: .1s;
+	}
+	.mainNav a:last-child{
+	}
+	.mainNav a:before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 25px;
+		left: 20px;
+		background-size: cover;
+	}
+	.mainNav .logo{
+		width: 200px;
+		height: 60px;
+		padding: 20px;
+		background-image: url(../img/esba_logo.png);
+		background-size: 85%;
+		background-attachment: top;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+
+	.contentWrapper .content{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper header{
+		display: none;
+	}
+	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 40%;
+		font-size: 0.8em;
+	}
+	
+	.contentWrapper .content .header-content .from{
+		max-width: 50%;
+		font-size: 1.1em;
+	}
+	.contentWrapper .content .header-content .received{
+		max-width: 50%;
+		font-size: 0.9em;
+	}
+	.resource .image{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+	.resource .description{
+		width: 100%;
+		float: none;
+	}
+	.resource .buttonWrapper{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+}
+
+@media only screen 
+  and (min-width: 600px) and (max-width: 1099px) {
+  	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 40%;
+		font-size: 0.8em;
+	}
+  	.contentWrapper .content{
+  		padding-left: 110px;
+  	}
+  	.mainNav{
+		width: 250px;
+		height: 100%;
+		min-height: 100%;
+		position: absolute;
+		background-color: #F9F9F9;
+		z-index: 9999;
+	}
+   	.shrinkNav{
+   		width: 80px;
+   		overflow: hidden;
+    }
+    .shrinkNav a p{
+    	display: none;
+    }
+}
+
+@media only screen 
+  and (max-width: 700px) {
+  	.full-width-container .half-width-box{
+  		width: 100%;
+  		margin-top: 30px;
+  	}
+  	.full-width-container .half-width-box:first-child{
+  		margin-top: 0px;
+  	}
+
+  	.scoreInputContent{
+  		padding: 0px 0px 25px 0px;
+  	}
+
+  	.scoreForm{
+  		width: 100%;
+  	}
+
+  	.boxes label{
+  		padding: 16px 32px;
+  	}
+
+  	.absentBox{
+  		margin-left: 0px;
+  	}
+}
+
+@media only screen
+	and (max-width: 500px){
+		.boxes label{
+  		padding: 12px 24px;
+  		}
+
+  		.studentScoreTally p{
+  			font-size: 0.9em;
+  		}
+	}
+
+@media only screen
+	and (max-width: 400px){
+		.boxes label{
+			padding: 8px 18px;
+		}
+
+		.absentBox label{
+			font-size: 1em;
+		}
+	}
+
+@media only screen
+	and (max-width: 800px) {
+		.absentBox{
+			margin-top: 25px;
+		}
+
+	input[type=checkbox].absentTickBox:not(old) + label, input[type=checkbox].absentTickBox:not(old) + label > span, input[type=checkbox].absentTickBox:not(old):checked + label > span, input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
+  		display: inline-block;
+  		vertical-align: initial;
+  		margin-right: 5px;
+	}
+
+	.studentScoreTally{
+		margin-top: 5px;
+	}
+}
+
+@media only screen 
+  and (max-width: 900px) {
+  	.content-box .resource .image{
+  		width: 100%;
+  		float: none;
+  		margin-bottom: 30px;
+  	}
+  	.content-box .resource .description{
+  		width: 100%;
+  		float: none;
+  		
+  	}
+  	.content-box .resource .buttonWrapper{
+  		width: 100%;
+  		margin-top: 50px;
+  		text-align: right;
+  	}
+}
+
+
+
