@@ -441,13 +441,32 @@ label{
 	margin-bottom: 25px;
 }
 .settings-subtitle{
+	width: 100%;
 	font-size: 1.1em;
-	margin-top: 40px;
-	margin-bottom: 10px;
+	margin-top: 80px;
+	margin-bottom: 40px;
 	color: #444;
 }
 .name span{
 	color: #444;
+}
+.settings .line {
+	width: 100%;
+	height: auto;
+	float: none;
+	clear: both;
+	min-height: 80px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	
+}
+.settings .line .name{
+	width: 60%;
+	line-height: 2em;
+}
+.settings .line .name span{
+	width: 100%;
+	margin-bottom: 10px;
 }
 .settings .line .state{
 	width: 110px;
