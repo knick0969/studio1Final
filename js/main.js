@@ -21,4 +21,12 @@ $(document).ready(function(){
                     $(this).text('INACTIVE');
                 }
         });
+        
+        // SHOW/HIDE MENU
+        $('.showMenu').click(function(){
+            event.preventDefault();
+            $('.mainNav ul').slideToggle(300); 
+            $('.mainNav .showMenu .navIcon').toggleClass('open');
+        });
+        
 });
