@@ -261,11 +261,11 @@ label{
 }
 /* MENU STYLING */
 .mainNav .showMenu .navIcon {
-  width: 50px;
+  width: 40px;
   height: 45px;
   position: relative;
   margin: 0 auto;
-  margin-top: 22px;
+  margin-top: 25px;
   -webkit-transform: rotate(0deg);
   -moz-transform: rotate(0deg);
   -o-transform: rotate(0deg);
@@ -279,7 +279,7 @@ label{
 .mainNav .showMenu .navIcon span {
   display: block;
   position: absolute;
-  height: 6px;
+  height: 5px;
   width: 100%;
   background: #DDD;
   border-radius: 9px;
@@ -302,14 +302,14 @@ label{
   transform-origin: left center;
 }
 .mainNav .showMenu .navIcon span:nth-child(2) {
-  top: 13px;
+  top: 11px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
   transform-origin: left center;
 }
 .mainNav .showMenu .navIcon span:nth-child(3) {
-  top: 26px;
+  top: 22px;
   -webkit-transform-origin: left center;
   -moz-transform-origin: left center;
   -o-transform-origin: left center;
@@ -332,7 +332,7 @@ label{
   -moz-transform: rotate(-45deg);
   -o-transform: rotate(-45deg);
   transform: rotate(-45deg);
-  top: 32px;
+  top: 26px;
   left: 8px;
 }
 
@@ -1150,12 +1150,15 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	.mainNav .logo{
 		width: 200px;
 		height: 60px;
-		padding: 20px;
+		margin-top: 8px;
 		background-image: url(../img/esba_logo.png);
 		background-size: 85%;
 		background-attachment: top;
 		background-position: center;
 		background-repeat: no-repeat;
+	}
+	.mainNav .logo:hover{
+		background-color: #F9F9F9;
 	}
 
 	.contentWrapper .content{
@@ -1184,12 +1187,14 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	}
 	
 	.contentWrapper .content .header-content .from{
-		max-width: 50%;
+		max-width: 60%;
 		font-size: 1.1em;
 	}
 	.contentWrapper .content .header-content .received{
-		max-width: 50%;
+		max-width: 40%;
+		margin-top: 10px;
 		font-size: 0.9em;
+		line-height: 1.4em;
 	}
 	.resource .image{
 		width: 100%;
@@ -1276,7 +1281,7 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
   	.content-box .resource .description{
   		width: 100%;
   		float: none;
-  		
+  		padding-right: 0;
   	}
   	.content-box .resource .buttonWrapper{
   		width: 100%;
