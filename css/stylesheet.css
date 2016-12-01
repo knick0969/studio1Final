@@ -1615,6 +1615,10 @@ button{
 		float: none;
 		margin-top: 25px;
 	}
+
+	.score-page-success-header, .score-page-header{
+		padding-top: 100px;
+	}
 }
 
 @media only screen 
@@ -1697,7 +1701,20 @@ button{
   	.absentBox{
   		margin-left: 0px;
   	}
+
+  	.setBox1, .setBox2, .setBox3, .setBox4, .setBox5{
+  		width: 78.45px;
+  		height: 59px;
+  	}
 }
+
+@media only screen
+	and (max-width: 621px){
+	.setBox1, .setBox2, .setBox3, .setBox4, .setBox5{
+  		width: 62.45px;
+  		height: 51px;
+  	}	
+	}
 
 @media only screen
 	and (max-width: 520px){
@@ -1722,7 +1739,7 @@ button{
 	}
 
 @media only screen
-	and (max-width: 360px) {
+	and (max-width: 385px) {
 		.scoreInputContent-box{
 			padding: 0px 6px 25px 0px;
 		}
