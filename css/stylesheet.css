@@ -689,132 +689,7 @@ label{
 }
 
 .scoreInputContent{
-	padding: 0xp 0px 25px 0px;
-}
-
-.individualScore{
-	text-align: center;
-	margin-bottom: 30px;
-}
-
-.individualScore h1{
-	font-size: 1.4em;
-	font-weight: 200;
-	color: #999;
-	text-align: center;
-	padding: 40px 0px 20px 0px;
-}
-
-.scoreForm{
-	display: inline-block;
-}
-
-.absentBox{
-	display: inline-block;
-	margin-left: 90px;
-	color: #999;
-}
-
-.topSpan{
-	display:block;
-}
-
-input[type=checkbox   ]:not(old){
-  width     : 2em;
-  margin    : 0;
-  padding   : 0;
-  font-size : 1em;
-  opacity   : 0;
-}
-
-input[type=checkbox   ].absentTickBox:not(old) + label{
-  display      : block;
-  margin-left  : -2em;
-  line-height  : 1.5em;
-}
-
-input[type=checkbox   ].absentTickBox:not(old) + label > span{
-  display          : block;
-  width            : 0.875em;
-  height           : 0.875em;
-  margin           : 0.25em 0.5em 0.25em 0.25em;
-  border           : 0.0625em solid rgb(192,192,192);
-  border-radius    : 0.25em;
-  background       : rgb(224,224,224);
-  background-image :    -moz-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :     -ms-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :      -o-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image : -webkit-linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  background-image :         linear-gradient(rgb(240,240,240),rgb(224,224,224));
-  vertical-align   : bottom;
-  margin: 0 auto;
-}
-
-input[type=checkbox   ].absentTickBox:not(old):checked + label > span{
-  background-image :    -moz-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :     -ms-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :      -o-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image : -webkit-linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  background-image :         linear-gradient(rgb(224,224,224),rgb(240,240,240));
-  display: block;
-}
-
-input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
-  display          : block;
-  width            : 0.5em;
-  height           : 0.5em;
-  margin           : 0.125em;
-  border           : 0.0625em solid rgb(115,153,77);
-  border-radius    : 0.125em;
-  background       : rgb(153,204,102);
-  background-image :    -moz-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :     -ms-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :      -o-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image : -webkit-linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  background-image :         linear-gradient(rgb(179,217,140),rgb(153,204,102));
-  display: block;
-}
-
-.studentScoreTally{
-	margin-top: 40px;
-	color: #999;
-}
-
-.studentScoreTally span{
-	font-weight: bold;
-}
-
-.buttonSection{
-	text-align: right;
-	padding-right: 10px;
-}
-
-/* TEACHER SCORE INPUT */
-
-.score-page-header{
-	width: 100%;
-
-}
-
-.score-page-header h1{
-	font-size: 1.3em;
-	color: #999;
-}
-
-.score-page-header h3{
-	font-size: 0.9em;
-	font-weight: 200;
-	padding: 5px 0px;
-	color: #999;
-}
-
-.score-page-header h1:after{
-	content: "| Tuesday 09/11/2016";
-	display: inline-block;
-	font-size: 0.7em;
-	font-weight: 200;
-	padding-left: 10px;
-	color: #999;
+	padding: 0px;
 }
 
 .individualScore{
@@ -1779,6 +1654,24 @@ button{
     }
 }
 
+@media only screen
+	and (max-width: 806px) {
+		.absentBox{
+			margin-top: 25px;
+			margin-left: 50px;
+		}
+
+	input[type=checkbox].absentTickBox:not(old) + label, input[type=checkbox].absentTickBox:not(old) + label > span, input[type=checkbox].absentTickBox:not(old):checked + label > span, input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
+  		display: inline-block;
+  		vertical-align: initial;
+  		margin-right: 5px;
+	}
+
+	.studentScoreTally{
+		margin-top: 5px;
+	}
+}
+
 @media only screen 
   and (max-width: 700px) {
   	.full-width-container .half-width-box{
@@ -1807,7 +1700,7 @@ button{
 }
 
 @media only screen
-	and (max-width: 500px){
+	and (max-width: 520px){
 		.boxes label{
   		padding: 12px 24px;
   		}
@@ -1818,7 +1711,7 @@ button{
 	}
 
 @media only screen
-	and (max-width: 400px){
+	and (max-width: 430px){
 		.boxes label{
 			padding: 8px 18px;
 		}
@@ -1829,21 +1722,11 @@ button{
 	}
 
 @media only screen
-	and (max-width: 800px) {
-		.absentBox{
-			margin-top: 25px;
+	and (max-width: 360px) {
+		.scoreInputContent-box{
+			padding: 0px 6px 25px 0px;
 		}
-
-	input[type=checkbox].absentTickBox:not(old) + label, input[type=checkbox].absentTickBox:not(old) + label > span, input[type=checkbox].absentTickBox:not(old):checked + label > span, input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
-  		display: inline-block;
-  		vertical-align: initial;
-  		margin-right: 5px;
 	}
-
-	.studentScoreTally{
-		margin-top: 5px;
-	}
-}
 
 @media only screen 
   and (max-width: 900px) {
