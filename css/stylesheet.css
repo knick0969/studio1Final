@@ -688,6 +688,10 @@ label{
 	color: #999;
 }
 
+.scoreInputContent{
+	padding: 0xp 0px 25px 0px;
+}
+
 .individualScore{
 	text-align: center;
 	margin-bottom: 30px;
@@ -703,14 +707,6 @@ label{
 
 .scoreForm{
 	display: inline-block;
-}
-
-.scoreForm:before{
-	content: "Todays Score:";
-	display: inline-block;
-	color: #999;
-	padding-right: 20px;
-	font-weight: bold;
 }
 
 .absentBox{
