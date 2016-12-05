@@ -1120,6 +1120,9 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 
 @media only screen 
   and (max-width: 600px) {
+  	.contentWrapper{
+  		padding-top: 100px;
+  	}
 	.mainNav{
 		width: 100%;
 		height: 80px !important;
@@ -1203,19 +1206,26 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 		padding-top: 7px;
 	}
 	.contentWrapper .content .notification .buttonWrapper {
-		max-width: 40%;
-		font-size: 0.8em;
+		max-width: 30% !important;
+		font-size: 0.8em !important;
+		line-height: 1em !important;
 	}
-	
+	.contentWrapper .content .notificationBtn p {
+		font-size: 0.8em;
+		line-height: 1.5em !important;
+	}
 	.contentWrapper .content .header-content .from{
 		max-width: 60%;
 		font-size: 1.1em;
 	}
 	.contentWrapper .content .header-content .received{
-		max-width: 40%;
-		margin-top: 10px;
+		max-width: 50% !important;
+		float: right;
 		font-size: 0.9em;
 		line-height: 1.4em;
+		margin-right: 10px;
+		padding: 0px !important;
+		padding-top: 10px !important;
 	}
 	.resource .image{
 		width: 100%;
@@ -1260,6 +1270,9 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 		position: absolute;
 		background-color: #F9F9F9;
 		z-index: 9999;
+	}
+	.mainNav ul{
+		display: block !important;
 	}
    	.shrinkNav{
    		width: 80px;
@@ -1868,5 +1881,9 @@ button{
   	}
 }
 
-
-
+@media only screen 
+  and (min-width: 600px) {
+	.mainNav ul{
+		display: block !important;
+	}
+}
