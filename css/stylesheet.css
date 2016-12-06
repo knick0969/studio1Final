@@ -1076,9 +1076,11 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	float: left;
 	text-align: right;
 	font-size: 1em;
+	line-height: 1.4em;
 	font-weight: lighter;
 	color: #FFF;
 	padding-right: 30px;
+	padding-top: 10px;
 }
 .unread-description{
 	color: #999;
