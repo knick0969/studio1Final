@@ -947,9 +947,11 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	float: left;
 	text-align: right;
 	font-size: 1em;
+	line-height: 1.4em;
 	font-weight: lighter;
 	color: #FFF;
 	padding-right: 30px;
+	padding-top: 10px;
 }
 .unread-description{
 	color: #999;
@@ -987,6 +989,215 @@ input[type=checkbox].absentTickBox:not(old):checked +  label > span > span{
 	font-size: 1.05em;
 	line-height: 1.4em;
 	color: #777;
+<<<<<<< HEAD
+=======
+}
+
+@media only screen 
+  and (max-width: 600px) {
+  	.contentWrapper{
+  		padding-top: 100px;
+  	}
+	.mainNav{
+		width: 100%;
+		height: 80px !important;
+		min-height: 80px;
+		position: fixed;
+		margin-bottom: 20px;
+		background-color: #F9F9F9;
+		z-index: 9999;
+	}
+	.mainNav .showMenu{
+		display: block;
+	}
+	.mainNav ul{
+		width: 100%;
+		height: auto;
+		clear: both;
+		background-color: #F9F9F9;
+		display: none;
+		margin-top: 20px;
+		box-shadow: 0 16px 34px 0 #BBB;
+	}
+	.mainNav a{
+		width: 100%;
+		height: 80px;
+		position: relative;
+		line-height: 82px;
+		font-size: 1.1em;
+		color: #279d59;
+		letter-spacing: 1px;
+		padding-left: 70px;
+		display: inline-block;
+		transition: .1s;
+	}
+	.mainNav a:hover{
+		background-color: #CCC;
+		transition: .1s;
+	}
+	.mainNav a:last-child{
+	}
+	.mainNav a:before{
+		content: '';
+		width: 30px;
+		height: 30px;
+		position: absolute;
+		top: 25px;
+		left: 20px;
+		background-size: cover;
+	}
+	.mainNav .logo{
+		width: 200px;
+		height: 60px;
+		margin-top: 8px;
+		background-image: url(../img/esba_logo.png);
+		background-size: 85%;
+		background-attachment: top;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	.mainNav .logo:hover{
+		background-color: #F9F9F9;
+	}
+
+	.contentWrapper .content{
+		width: 90%;
+		margin: 0 auto;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper header{
+		display: none;
+	}
+	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 30% !important;
+		font-size: 0.8em !important;
+		line-height: 1em !important;
+	}
+	.contentWrapper .content .notificationBtn p {
+		font-size: 0.8em;
+		line-height: 1.5em !important;
+	}
+	.contentWrapper .content .header-content .from{
+		max-width: 60%;
+		font-size: 1.1em;
+	}
+	.contentWrapper .content .header-content .received{
+		max-width: 50% !important;
+		float: right;
+		font-size: 0.9em;
+		line-height: 1.4em;
+		margin-right: 10px;
+		padding: 0px !important;
+		padding-top: 10px !important;
+	}
+	.resource .image{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+	.resource .description{
+		width: 100%;
+		float: none;
+	}
+	.resource .buttonWrapper{
+		width: 100%;
+		float: none;
+		margin-top: 25px;
+	}
+}
+
+@media only screen 
+  and (min-width: 600px) and (max-width: 1099px) {
+  	.contentWrapper .content .notification {
+		width: 100%;
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.contentWrapper .content .notification .description {
+		max-width: 60%;
+		font-size: 0.75em;
+		line-height: 1.4em;
+		padding-top: 7px;
+	}
+	.contentWrapper .content .notification .buttonWrapper {
+		max-width: 40%;
+		font-size: 0.8em;
+	}
+  	.contentWrapper .content{
+  		padding-left: 110px;
+  	}
+  	.mainNav{
+		width: 250px;
+		height: 100%;
+		min-height: 100%;
+		position: absolute;
+		background-color: #F9F9F9;
+		z-index: 9999;
+	}
+	.mainNav ul{
+		display: block !important;
+	}
+   	.shrinkNav{
+   		width: 80px;
+   		overflow: hidden;
+    }
+    .shrinkNav a p{
+    	display: none;
+    }
+}
+@media only screen 
+  and (max-width: 700px) {
+  	.full-width-container .half-width-box{
+  		width: 100%;
+  		margin-top: 30px;
+  	}
+  	.full-width-container .half-width-box:first-child{
+  		margin-top: 0px;
+  	}
+
+  	.support .description{
+  		width: 100%;
+  		float: none;
+  	}
+  	.support .buttonWrapper{
+  		width: 25%;
+  		left: 50%;
+  		position: relative;
+  		margin-left: -12.5%;
+  		margin-top: 20px;
+  	}
+
+}
+@media only screen 
+  and (max-width: 900px) {
+  	.content-box .resource .image{
+  		width: 100%;
+  		float: none;
+  		margin-bottom: 30px;
+  	}
+  	.content-box .resource .description{
+  		width: 100%;
+  		float: none;
+  		padding-right: 0;
+  	}
+  	.content-box .resource .buttonWrapper{
+  		width: 100%;
+  		margin-top: 50px;
+  		text-align: right;
+  	}
+>>>>>>> frontend
 }
 
 /* GENERAL BUTTONS STYLING */
@@ -1801,5 +2012,9 @@ button{
   	}
 }
 
-
-
+@media only screen 
+  and (min-width: 600px) {
+	.mainNav ul{
+		display: block !important;
+	}
+}
